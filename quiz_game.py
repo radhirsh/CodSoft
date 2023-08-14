@@ -1,6 +1,4 @@
 import random
-
-# Sample quiz questions and answers
 quiz_data = [
     {
         "question": "Which of the following is the use of id() function in Python?",
@@ -17,42 +15,6 @@ quiz_data = [
         "options": ["UPPER CASE", "lower case", "Capitalized", "None of the mentioned"],
         "correct_answer": 1
     },
-    {
-        "question": "Mathematical operations can be performed on a string. State whether true or false -",
-        "options": ["False", "True"],
-        "correct_answer": 0
-    },
-    {
-        "question": "Which one of the following has the highest precedence in the expression?",
-        "options": ["Addition", "Multiplication", "Exponential", "Parentheses"],
-        "correct_answer": 3
-    },
-    {
-        "question": "What is the return type of function id?",
-        "options": ["float", "bool", "dict", "int"],
-        "correct_answer": 3
-    },
-    {
-        "question": "What is the output of the following code?\nprint('Hello', 'foo', 'and', 'foo')",
-        "options": ["Hello ‘foo’ and foo", "Hello foo and foo", "Hello foo and ‘bin’", "Error"],
-        "correct_answer": 3
-    },
-    {
-        "question": "Which of the following data types is not supported in Python?",
-        "options": ["String", "Numbers", "Slice", "List"],
-        "correct_answer": 2
-    },
-    {
-        "question": "Which of the following keywords mark the beginning of the class definition?",
-        "options": ["return", "class", "def", "All of the above"],
-        "correct_answer": 1
-    },
-    {
-        "question": "Select the reserved keyword in Python.",
-        "options": ["else", "raise", "import", "All of the above"],
-        "correct_answer": 3
-    },
-    # Add more questions...
 ]
 
 def display_welcome_message():
@@ -91,8 +53,10 @@ def play_quiz_game():
     
     if score == len(quiz_data):
         print("Congratulations! You answered all questions correctly.")
-    elif score >= 7:
-        print("Keep practicing! You're making progress.")
+    elif score == 2:
+        print("Well done! You got 2 out of 3 questions correct. Keep it up!")
+    elif score == 1:
+        print("Nice try! You got 1 out of 3 questions correct. Keep learning!")
     else:
         print("Don't give up! Keep practicing and you'll improve.")
 
